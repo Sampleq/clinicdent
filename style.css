@@ -1,0 +1,441 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url(./fonts/Montserrat-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(./fonts/Montserrat-Bold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'PlayfairDisplay';
+    src: url(./fonts/PlayfairDisplay-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(40, 67, 127);
+    box-sizing: border-box;
+    line-height: 1.875;
+}
+
+h1,
+h2,
+h3
+    {
+    font-weight: bold;
+    color: rgb(56, 104, 210);
+}
+
+h2 {
+    font-size: 3.5rem;
+}
+
+.container {
+    background: url(./img/bg_header.png);
+    background-size: cover;
+    background-position: center;
+    height: 83rem;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 117rem;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 4rem;
+}
+
+.logo {
+    flex-shrink: 0;
+}
+
+.logo__img {
+    margin-right: 1rem;
+}
+
+.logo__text {
+    color: rgb(56, 104, 210);
+}
+
+.menu {
+    margin-left: 3.5rem;
+}
+
+.menu__items {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 45rem;
+}
+
+.menu__link {
+    font-size: 1.6rem;
+    color: rgb(56, 104, 210);
+    font-weight: bold;
+    /* line-height: 3.125; */
+    text-align: left;
+    text-decoration: none;
+    display: block;
+    padding: 0 1rem 0.8rem;
+    height: 3.45rem;
+}
+
+.menu__link:hover {
+    border-bottom: 0.3rem solid rgb(56, 104, 210);
+}
+
+.phone {
+    font-size: 2rem;
+    color: rgb(56, 104, 210);
+    /* font-weight: bold; */
+    /* line-height: 3; */
+    flex-shrink: 0;
+}
+
+.phone::before {
+    content: '\f095';
+    font-family: 'fontawesome';
+    padding-right: 1rem;
+    /* обязательно брать название шрифта в одинарные кавычки!! ' ' */
+}
+
+.main {
+    padding-top: 18.5rem;
+}
+
+.main__heading {
+    font-size: 4rem;
+    line-height: 5rem;
+    max-width: 73rem;
+}
+
+.main__items {
+    margin: 4rem 0 5.5rem;
+    list-style-image: url(./img/check-mark.png);
+    list-style-position: inside;
+    /* задаём чтобы маркеры списка начинались внутри блока списка ( не сдвигались влево за родительский блок. Отступ текста элемента списка задайм через псевдоэлемент ::first-letter  -   .main__item::first-letter */
+}
+
+.main__item::marker {
+    margin-right: 1rem;
+}
+
+/* .main__item-d {
+    line-height: 3.5rem;
+}
+.main__item-d::before {
+    content: '\f00c';
+    font-family: 'fontawesome';
+    margin-right: 1rem;
+} */
+.main__item {
+    line-height: 3.5rem;
+    font-size: 1.8rem;
+}
+
+.main__item::first-letter {
+    padding-left: 1rem;
+}
+
+.button {
+    border: none;
+    outline: none;
+    background-color: #3868d2;
+    box-shadow: 3.536px 3.536px 20.01px 2.99px rgba(40, 67, 127, 0.36);
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: bold;
+    padding: 2.1rem 5.7rem;
+    outline: 1px solid #3869d200;
+    transition: all 0.2s;
+}
+
+.button:hover {
+    cursor: pointer;
+    color: #3868d2;
+    background-color: rgba(255, 255, 255, 0.7);
+    outline: 1px solid #3868d2;
+}
+
+/* --- about --- */
+
+.about_m {
+    margin-top: 16.5rem;
+}
+
+.about__line {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 4.5rem;
+}
+
+.about__line:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.about__desc {
+    /* flex-shrink: 1; */
+    flex-basis: 55.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.about__line:first-child .about__desc {
+    display: block;
+}
+
+.about__heading {
+    line-height: 3rem;
+    margin-bottom: 5.1rem;
+}
+
+/* .about__text {
+    display: flex;
+}
+.about__line:not(.about__line:first-child) .about__text::before {
+    content: ',,';
+    display: block;
+    font-family: 'PlayfairDisplay', serif;
+    color: rgb(56, 104, 210);
+    font-size: 15rem;
+    letter-spacing: -1rem;
+    margin-right: 2rem;
+    line-height: 0;
+    transform: translateY(-25%);
+} */
+
+.about__text {
+    display: flex;
+    position: relative;
+    margin-left: 7.5rem;
+}
+
+.about__line:not(.about__line:first-child) .about__text::before {
+    content: ',,';
+    display: block;
+    font-family: 'PlayfairDisplay', serif;
+    color: rgb(56, 104, 210);
+    font-size: 15rem;
+    letter-spacing: -1rem;
+
+    position: absolute;
+    top: -3.5rem;
+    left: -7.5rem;
+    line-height: 0;
+}
+
+.about__img-cont {
+    flex-basis: 55.2rem;
+    flex-shrink: 1;
+}
+
+.about__img {
+    width: 100%;
+    display: block;
+    box-shadow: 1rem 1rem 0 #ebf0fa;
+}
+
+/* --- and of about --- */
+
+/* --- services --- */
+.services_m {
+    margin-top: 12.5rem;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cards_m {
+    margin-top: 6rem;
+}
+
+.card {
+    width: 29.25rem;
+    height: 29.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* сделать адаптивно шахматный фон с помощью JS */
+.card_bgcolor {
+    background-color: #fbfcff;
+}
+
+.card__text {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #3868d2;
+    text-transform: uppercase;
+    line-height: 1.389;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+/* --- end of services --- */
+
+
+/* --- reserve --- */
+
+.reserve {
+    background-image: url(./img/reserve_bg.png);
+    background-size: cover;
+    background-position: center;
+    padding-top: 12.5rem;
+    padding-bottom: 13rem;
+    text-align: center;
+
+}
+
+.reserve_m {
+    margin-top: 11rem;
+}
+
+.reserve__text {
+    max-width: 40rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+
+.reserve__form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    max-width: fit-content;
+    margin: 5rem auto 0;
+}
+
+.reserve__input {
+    padding: 0 2rem;
+    width: 27rem;
+    height: 5rem;
+    border: 1px solid #3868d2;
+    /* vertical-align: middle; */
+    /* с display: flex; у родителя - не нужно */
+    flex-shrink: 0;
+
+}
+.reserve__button {
+    width: 27rem;
+    padding: 0;
+    height: 5rem;
+    /* vertical-align: middle; */
+    /* с display: flex; у родителя - не нужно */
+    flex-shrink: 0;
+
+}
+
+/* --- end of reserve --- */
+
+/* --- doctors --- */
+.doctors_m {
+    margin-top: 11rem;
+}
+.doctors__cards {
+    margin-top: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+.doctors__card {
+    width: 27rem;
+    text-align: center;
+    transition: all 0.2s;
+    padding-bottom: 1.5rem;
+}
+.doctors__card:hover {
+    box-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.doctors__img {
+    width: 100%;
+}
+
+
+/* --- end of doctors --- */
+
+/* --- footer --- */
+
+.footer_m {
+    margin-top: 10rem;
+}
+.footer {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: #28437f;
+    color: #fff;
+    min-height: 13.5rem;
+}
+.footer__container {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo__text_ftr {
+    color: #fff;
+    margin-right: 2rem;
+}
+.logo__img_ftr {
+    filter: brightness(10);
+}
+.phone_ftr {
+    color: #fff;
+    margin-left: -1rem;
+}
+.footer__title::before {
+    content: '\f017';
+    font-family: 'fontawesome';
+    margin-left: -2.5rem;
+    margin-right: 1rem;
+}
+.footer__title_adress::before {
+    content: '\f3c5';
+    margin-left: -2rem;
+}
+.footer__text {
+    line-height: 1.5;
+}
+
+/* --- end of footer --- */
+
+
+@media screen and (max-width:768px) {
+    /* html {
+        font-size: 8px;
+    } */
+}
+
+#toogle__chckbx, #toogle{
+    display: none;
+}

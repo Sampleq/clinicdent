@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinic Dent</title>
+    <!-- пдоключаем fontawesome  оффлайн (достаточно только css и svgs и webfonts(???)) -->
+    <!-- <link rel="stylesheet" href="./fonts/fontawesome-free-6.2.1-web/css/all.css"> -->
+
+    <script src="./fontawesome-free-6.2.1-web/js/all.js"></script>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./adaptive.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper wrapper_mobmenu">
+
+            <div class="header">
+                <div class="logo">
+                    <img src="./img/015-smile.png" alt="smile" class="logo__img">
+                    <span class="logo__text">Улыбка</span>
+                </div>
+                <!-- <nav class="menu">
+                    <ul class="menu__items">
+                        <li class="menu__item"><a href="" class="menu__link">О нас</a></li>
+                        <li class="menu__item"><a href="#services" class="menu__link">Услуги</a></li>
+                        <li class="menu__item"><a href="" class="menu__link">Доктора</a></li>
+                        <li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
+                    </ul>
+                </nav> -->
+                <input type="checkbox" name="" id="toogle__chckbx">
+                <label for="toogle__chckbx">
+                    <span id="toogle">☰</span>
+                    <nav class="menu">
+                        <ul class="menu__items">
+                            <li class="menu__item"><a href="#about" class="menu__link">О нас</a></li>
+                            <li class="menu__item"><a href="#services" class="menu__link">Услуги</a></li>
+                            <li class="menu__item"><a href="#doctors" class="menu__link">Доктора</a></li>
+                            <li class="menu__item"><a href="#contacts" class="menu__link">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </label>
+
+                <div class="phone">
+                    <!-- <i class="fa-solid fa-phone"></i> -->
+                    +7(812) 123-45-67
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="main">
+                <h1 class="main__heading">Качественное и безболезненное лечение зубов</h1>
+                <!-- <div class="main__items">
+                    <div class="main__item-d">Только современное оборудование и материалы </div>
+                    <div class="main__item-d">Узкопрофильные специалисты</div>
+                    <div class="main__item-d">Возможность рассрочки</div>
+                </div> -->
+
+                <ul class="main__items">
+                    <li class="main__item">Только современное оборудование и материалы</li>
+                    <li class="main__item">Узкопрофильные специалисты</li>
+                    <li class="main__item">Возможность рассрочки</li>
+                </ul>
+
+                <button type="button" class="button button_main">Записаться на прием</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="about about_m" id="about">
+        <div class="wrapper">
+            <div class="about__line">
+                <div class="about__desc">
+                    <h2 class="about__heading">О нас</h2>
+                    <p class="about__text">«Улыбка» – это частная стоматологическая клиника, в которой с пациентами
+                        работают высококвалифицированные специалисты разного профиля. У нас вы сможете при необходимости
+                        получить все необходимые услуги, а также пройти регулярный плановый осмотр.
+                        <br><br>
+                        Стоматология «Улыбка» — когда качество выше ваших ожиданий!
+                    </p>
+                </div>
+                <div class="about__img-cont">
+                    <img src="./img/about-img1.png" alt="" class="about__img">
+                </div>
+            </div>
+
+            <div class="about__line">
+                <div class="about__desc">
+                    <p class="about__text">
+                        «Мы любим свою работу. Для нас важно, чтобы каждый пациент получил высококвалифицированную
+                        помощь наших врачей-стоматологов, а также высококлассный сервис европейского уровня».
+                    </p>
+                </div>
+                <div class="about__img-cont">
+                    <img src="./img/about-img2.png" alt="" class="about__img">
+                </div>
+            </div>
+
+            <div class="about__line">
+                <div class="about__desc">
+                    <p class="about__text">
+                        «Мы любим свою работу. Для нас важно, чтобы каждый пациент получил высококвалифицированную
+                        помощь наших врачей-стоматологов, а также высококлассный сервис европейского уровня».
+                    </p>
+                </div>
+                <div class="about__img-cont">
+                    <img src="./img/about-img2.png" alt="" class="about__img">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="services services_m" id="services">
+        <div class="wrapper">
+            <h2 class="services__title">Наши услуги</h2>
+            <div class="cards cards_m">
+                <div class="card">
+                    <img src="./img/009-dental-care.png" alt="" class="card__img">
+                    <p class="card__text">Терапевтическая стоматология</p>
+                </div>
+                <div class="card card_bgcolor ">
+                    <img src="./img/016-dental-3.png" alt="" class="card__img">
+                    <p class="card__text">Рентгендиагностика</p>
+                </div>
+                <div class="card ">
+                    <img src="./img/002-tooth.png" alt="" class="card__img">
+                    <p class="card__text">Отбеливание</p>
+                </div>
+                <div class="card card_bgcolor ">
+                    <img src="./img/007-dental-implant.png" alt="" class="card__img">
+                    <p class="card__text">Имплантация</p>
+                </div>
+                <div class="card card_bgcolor ">
+                    <img src="./img/011-teeth.png" alt="" class="card__img">
+                    <p class="card__text">Хирургия</p>
+                </div>
+                <div class="card">
+                    <img src="./img/008-dentures.png" alt="" class="card__img">
+                    <p class="card__text">Протезирование</p>
+                </div>
+                <div class="card card_bgcolor ">
+                    <img src="./img/006-tooth-with-braces.png" alt="" class="card__img">
+                    <p class="card__text">Ортодонтия</p>
+                </div>
+                <div class="card">
+                    <img src="./img/003-tooth-1.png" alt="" class="card__img">
+                    <p class="card__text">Эстетическая стоматология</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="reserve reserve_m">
+        <h2 class="reserve__title">Записаться на прием</h2>
+        <p class="reserve__text">Хотите записаться на прием к специалисту —</p>
+        <p>заполните форму ниже, и мы перезвоним Вам в течение 30 минут!</p>
+
+        <form action="" class="reserve__form">
+            <input type="text" name="" id="" class="reserve__input" placeholder="Ваше имя">
+            <input type="tel" name="" id="" class="reserve__input" placeholder="Ваш телефон">
+            <input type="submit" value="Записаться" class="button reserve__button">
+        </form>
+    </div>
+
+    <div class="doctors doctors_m" id="doctors">
+        <div class="wrapper">
+            <h2 class="doctors__title">Наши доктора</h2>
+
+
+            <div class="doctors__cards">
+
+                <div class="doctors__card">
+                    <img src="./img/doctor1.png" alt="" class="doctors__img">
+                    <h3 class="doctors__subtitle">Добрый доктор</h3>
+                    <p class="doctors__name">Фамилия Имя Отчество</p>
+                </div>
+
+                <div class="doctors__card">
+                    <img src="./img/doctor2.png" alt="" class="doctors__img">
+                    <h3 class="doctors__subtitle">Добрый доктор</h3>
+                    <p class="doctors__name">Фамилия Имя Отчество</p>
+                </div>
+
+                <div class="doctors__card">
+                    <img src="./img/doctor3.png" alt="" class="doctors__img">
+                    <h3 class="doctors__subtitle">Добрый доктор</h3>
+                    <p class="doctors__name">Фамилия Имя Отчество</p>
+                </div>
+
+                <div class="doctors__card">
+                    <img src="./img/doctor4.png" alt="" class="doctors__img">
+                    <h3 class="doctors__subtitle">Добрый доктор</h3>
+                    <p class="doctors__name">Фамилия Имя Отчество</p>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="footer footer_m" id="contacts">
+        <div class="wrapper">
+            <div class="footer__container">
+
+                <div class="logo logo_ftr">
+                    <img src="./img/015-smile.png" alt="smile" class="logo__img logo__img_ftr">
+                    <span class="logo__text logo__text_ftr">Улыбка</span>
+                </div>
+
+                <div class="footer__item">
+                    <h4 class="footer__title">Режим работы:</h4>
+                    <p class="footer__text">ежедневно с 9:00 до 21:00</p>
+                </div>
+                <div class="footer__item">
+                    <h4 class="footer__title footer__title_adress">Адрес:</h4>
+                    <p class="footer__text">Богатырский пр., 24</p>
+                </div>
+
+                <div class="phone phone_ftr">
+                    <!-- <i class="fa-solid fa-phone"></i> -->
+                    +7(812) 123-45-67
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
