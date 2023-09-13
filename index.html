@@ -235,8 +235,8 @@
 </body>
 
 <script>
-    const menu = document.querySelector('.menu');
 
+// Выпадающее меню сделано на CSS через checkbox и работает без JS. Убирание меню при клике пишем на JS
     const toggleChckbx = document.getElementById('toggle__chckbx');
     const toggleBurgBtn = document.getElementById('toggle');
     const menuItems = document.querySelectorAll('.menu__item');
@@ -251,6 +251,7 @@
             document.removeEventListener('click', closeMenu);
         } 
     }
+    
 </script>
 
 </html>
