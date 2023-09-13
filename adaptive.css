@@ -148,6 +148,10 @@
         text-align: center;
         line-height: 3.3;
         height: 5rem;
+
+        opacity: 0;
+        transform: scaleY(0);
+        transition: all 0.3s;
     }
     .menu__link:hover {
         color: #fff;
@@ -174,6 +178,10 @@
         /* height: 115vh;
         min-height: 70rem; */
         height: 20rem;
+    }
+    #toggle__chckbx:checked + label .menu__link {
+        transform: scaleY(1);
+        opacity: 1;
     }
     .phone {
         font-size: 1.8rem;
