@@ -240,18 +240,22 @@
     const toggle = document.getElementById('toggle__chckbx');
     const menuItems = document.querySelectorAll('.menu__item');
 
-    for (let menuItem of menuItems) {
-        menuItem.onclick = () => {
-            toggle.checked = false;
-        }
+    // for (let menuItem of menuItems) {
+    //     menuItem.onclick = () => {
+    //         toggle.checked = false;
+    //     }
+    // }
+
+    toggle.onclick = () => {
+        document.addEventListener('click', closeMenu);
     }
 
-
-// document.onclick = function () {
-//     if (event.currentTarget == menu){
-//         alert('!!');
-//     }
-// }
+    function closeMenu (event) {
+        if (event.target !== toggle) {
+            toggle.checked = false;
+            document.removeEventListener('click', closeMenu);
+        }
+    }
 </script>
 
 </html>
