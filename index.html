@@ -237,24 +237,19 @@
 <script>
     const menu = document.querySelector('.menu');
 
-    const toggle = document.getElementById('toggle__chckbx');
+    const toggleChckbx = document.getElementById('toggle__chckbx');
+    const toggleBurgBtn = document.getElementById('toggle');
     const menuItems = document.querySelectorAll('.menu__item');
 
-    // for (let menuItem of menuItems) {
-    //     menuItem.onclick = () => {
-    //         toggle.checked = false;
-    //     }
-    // }
-
-    toggle.onclick = () => {
+    toggleChckbx.onclick = () => {
         document.addEventListener('click', closeMenu);
     }
 
     function closeMenu (event) {
-        if (event.target !== toggle) {
-            toggle.checked = false;
+        if (event.target !== toggleChckbx && event.target !== toggleBurgBtn ) {
+            toggleChckbx.checked = false;
             document.removeEventListener('click', closeMenu);
-        }
+        } 
     }
 </script>
 
