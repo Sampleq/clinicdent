@@ -150,8 +150,8 @@
         height: 5rem;
 
         opacity: 0;
-        transform: scaleY(0);
-        transition: all 0.3s;
+        /* transform: scaleY(0); */
+        transition: all 0.3s linear;
     }
     .menu__link:hover {
         color: #fff;
@@ -180,7 +180,7 @@
         height: 20rem;
     }
     #toggle__chckbx:checked + label .menu__link {
-        transform: scaleY(1);
+        /* transform: scaleY(1); */
         opacity: 1;
     }
     .phone {
