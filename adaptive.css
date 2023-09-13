@@ -171,8 +171,9 @@
 
         /* height: fit-content; узнаём высоту через инспектор браузера 
         height: 20rem; */
-        height: 115vh;
-        min-height: 70rem;
+        /* height: 115vh;
+        min-height: 70rem; */
+        height: 20rem;
     }
     .phone {
         font-size: 1.8rem;
