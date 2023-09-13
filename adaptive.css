@@ -9,7 +9,7 @@
     }
 } */
 
-/* 1770px / 96% = 1218px  - т.к. max-width: 117rem  - можем задать точку перехода больше 1218px - например 1280px. Задавая .wrapper-у width: 96%; (или 96vw)  - мы по-сути сделаем боковые отступы  в 2% от ширины экрана - теперь на всех экранах меньше 1280px всегда будут нормальные отступы по бокам. Удобно использовать, если не заданы конкретные отступы для адаптива в макете. */
+/* 1170px / 96% = 1218px  - т.к. max-width: 117rem  - можем задать точку перехода больше 1218px - например 1280px. Задавая .wrapper-у width: 96%; (или 96vw)  - мы по-сути сделаем боковые отступы  в 2% от ширины экрана - теперь на всех экранах меньше 1280px всегда будут нормальные отступы по бокам. Удобно использовать, если не заданы конкретные отступы для адаптива в макете. */
 @media screen and (max-width:1280px) {
     .wrapper {
         width: 96vw;
@@ -103,11 +103,19 @@
     }
 
     .header {
-        position: relative;
+        /* position: relative; */
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+
         padding-left: 2%;
         padding-right: 2%;
+        padding-top: 0;
     }
-    .logo__text, .phone {
+    .logo__text, .phone, .phone__number {
         color: #fff;
     }
     .logo__img {
@@ -115,7 +123,7 @@
     }
     .menu {
         position: absolute;
-        top: 4.45rem;
+        top: 3.45rem;
         left: 50%;
         transform: translateX(-50%);
 
@@ -125,13 +133,14 @@
         visibility: hidden;
         height: 0;
         overflow: hidden;
-        transition: all 0.3s;
+        transition: all 0.3s linear;
 
     }
     .menu__items {
         margin: 0 auto;
         flex-direction: column;
     }
+
     .menu__link {
         color: #fff;
         display: block;
@@ -144,23 +153,25 @@
         color: #fff;
         background-color: #3868d2;
     }
-    #toogle {
+    #toggle {
         display: block;
         color: #fff;
         position: absolute;
-        top: 0.5rem;
+        top: 0.0rem;
         left: 50%;
         transform: translateX(-50%);
     }
-    #toogle:hover {
+    #toggle:hover {
         cursor: pointer;
     }
 
-    #toogle__chckbx:checked + label .menu {
+    #toggle__chckbx:checked + label .menu {
         visibility: visible;
         /* background-color: aquamarine; */
 
-        height: fit-content;
+        /* height: fit-content; узнаём высоту через инспектор браузера 
+        height: 20rem; */
+        height: 100vh;
     }
     .phone {
         font-size: 1.8rem;

@@ -107,7 +107,6 @@ h2 {
 
 .phone {
     font-size: 2rem;
-    color: rgb(56, 104, 210);
     /* font-weight: bold; */
     /* line-height: 3; */
     flex-shrink: 0;
@@ -118,6 +117,10 @@ h2 {
     font-family: 'fontawesome';
     padding-right: 1rem;
     /* обязательно брать название шрифта в одинарные кавычки!! ' ' */
+}
+.phone__number {
+    color: rgb(56, 104, 210);
+    text-decoration: none;
 }
 
 .main {
@@ -340,7 +343,10 @@ h2 {
     /* vertical-align: middle; */
     /* с display: flex; у родителя - не нужно */
     flex-shrink: 0;
-
+}
+/* Чтобы на iPhone, iOS не применялось масштабирование при заполнении форм - ставим размер шрифта более 16px */
+input:focus, textarea:focus, select:focus {
+    font-size: 16px;
 }
 .reserve__button {
     width: 27rem;
@@ -430,12 +436,6 @@ h2 {
 /* --- end of footer --- */
 
 
-@media screen and (max-width:768px) {
-    /* html {
-        font-size: 8px;
-    } */
-}
-
-#toogle__chckbx, #toogle{
+#toggle__chckbx, #toggle{
     display: none;
 }
