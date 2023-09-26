@@ -419,6 +419,9 @@ input:focus, textarea:focus, select:focus {
     color: #fff;
     margin-left: -1rem;
 }
+.phone__number_ftr {
+    color: #fff;
+}
 .footer__title::before {
     content: '\f017';
     font-family: 'fontawesome';
