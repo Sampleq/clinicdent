@@ -169,7 +169,7 @@
         cursor: pointer;
     }
 
-    #toggle__chckbx:checked + label .menu {
+    #toggle__chckbx:checked + label + .menu {
         visibility: visible;
         /* background-color: aquamarine; */
 
@@ -179,7 +179,7 @@
         min-height: 70rem; */
         height: 20rem;
     }
-    #toggle__chckbx:checked + label .menu__link {
+    #toggle__chckbx:checked + label + .menu .menu__link {
         /* transform: scaleY(1); */
         opacity: 1;
     }
